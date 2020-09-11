@@ -28,9 +28,12 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
+      <StatusBar backgroundColor="#644df7"/>
        <Stack.Navigator>
-         <Stack.Screen  name="Home" component={Home} options={{title: 'Home'}}/>
-         <Stack.Screen  name="List" component={List} options={{title: 'List'}}/>
+         <Stack.Screen  name="Home" component={Home} options={{title: 'Home' , 
+         headerStyle:{backgroundColor:'#644df7'},headerTintColor:"#fff"}}/>
+         <Stack.Screen  name="List" component={List} options={{title: 'List',
+        headerStyle:{backgroundColor:'#644df7'},headerTintColor:"#fff"}}/>
        </Stack.Navigator>
     </NavigationContainer>
   );
